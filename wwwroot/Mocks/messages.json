@@ -1,0 +1,17 @@
+[
+    {
+        "messageId": 1,
+        "from": "Carol",
+        "message": "Awesome stuff"
+    },
+    {
+        "messageId": 2,
+        "from": "John",
+        "message": "This is amazing"
+    },
+    {
+        "messageId": 3,
+        "from": "David",
+        "message": "Good job!"
+    }
+]

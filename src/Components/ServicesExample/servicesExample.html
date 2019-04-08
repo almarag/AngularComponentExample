@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Services example with Redux and $q</h2>            
+            <p>This example combines Redux and Controller $http call using queue ($q) to gather information from a service and store into redux</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Message #</th>
+                        <th>From</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="message in $ctrl.messages">
+                        <td>{{message.messageId}}</td>
+                        <td>{{message.from}}</td>
+                        <td>{{message.message}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

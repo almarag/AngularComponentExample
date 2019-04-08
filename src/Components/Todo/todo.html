@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<div class="container">
+    <div class="row" ng-model="$ctrl.todo">
+        <div class="col-md-12">
+            <h2>Todos Example</h2>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="$ctrl.todo" placeholder="Enter Todo">
+            </div>            
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-primary" ng-disabled="!$ctrl.todo" ng-click="$ctrl.submitTodo($ctrl.todo)">+ Add Todo</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item ui-state-default" ng-repeat="todo in $ctrl.todos">
+                    <div class="row">
+                        <div class="col-md-9">
+                            {{todo}} 
+                        </div>
+                        <div class="col-md-3 text-right">
+                            <button class="btn btn-sm btn-danger" ng-click="$ctrl.removeTodo($index)"><i class="fa fa-trash"></i></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
