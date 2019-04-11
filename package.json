@@ -5,10 +5,12 @@
   "license": "MIT",
   "devDependencies": {
     "@types/angular": "^1.6.54",
+    "@types/toastr": "^2.1.37",
     "jasmine": "^3.4.0",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-static-files-copy": "^2.0.0",
     "popper.js": "^1.15.0",
+    "redux-devtools-extension": "^2.13.8",
     "sass": "^1.17.4",
     "tslint": "^5.15.0",
     "typescript": "^3.4.1"
@@ -21,18 +23,22 @@
   },
   "dependencies": {
     "angular": "^1.7.8",
+    "angular-animate": "^1.7.8",
     "angular-font-awesome": "^3.1.2",
+    "angular-messages": "^1.7.8",
     "angular-router": "^0.0.2",
     "angular-ui-router": "^1.0.22",
+    "angularjs-toaster": "^3.0.0",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "ng-redux": "^4.1.0",
     "popper": "^1.0.1",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "toastr": "^2.1.4"
   },
   "staticFiles": {
     "staticPath": "wwwroot",
     "watcherGlob": "**"
-  }  
+  }
 }

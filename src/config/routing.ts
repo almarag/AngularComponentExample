@@ -28,6 +28,11 @@ export default ['$locationProvider', '$stateProvider', '$urlRouterProvider',
         template: '<services-example></services-example>',
         url: '/services'
     })
+
+    .state('app.forms', {
+        template: '<forms></forms>',
+        url: '/forms'
+    })
     ;
 
     $urlRouterProvider.otherwise('/home');

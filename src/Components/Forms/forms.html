@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Forms example</h2>
+            <p>Fill the form below</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">            
+            <form name="userForm" ng-submit="$ctrl.sendForm(userForm.$valid)" novalidate>
+                <div class="form-group">
+                    <label for="FullName">* Full Name:</label>
+                    <input type="text" name="fullName" class="form-control" ng-model="FormModel.FullName" id="FullName" placeholder="Type your name" required />
+                    <div ng-messages="userForm.fullName.$error">
+                        <div ng-message="required">required</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Email">* Email:</label>
+                    <input type="email" class="form-control" ng-model="FormModel.Email" id="Email" placeholder="Type your email" required />
+                    <div ng-messages="userForm.email.$error">
+                        <div ng-message="required">required</div>
+                    </div>                    
+                </div>
+                <div class="form-group">
+                    <label for="Age">* Age:</label>
+                    <input type="number" name="age" class="form-control" ng-model="FormModel.Age" id="Age" ng-min="18" placeholder="Age (18+)" required>
+                    <div ng-messages="userForm.age.$error">
+                        <div ng-message="required">required</div>
+                        <div ng-message="min">You need to be over 18</div>
+                    </div>                      
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary" ng-click="$ctrl.clear()">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
